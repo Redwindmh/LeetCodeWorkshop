@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mars Rover</title>
+  <link href="./styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Mars Rover Command Center</h1>
+  <div class="movement-grid"></div>
+  <form id="input-data" action="submit">
+    <lable for="grid-input">Grid Size</lable>
+    <input type="text" name="grid-input" id="grid-input" placeholder="x y">
+    <lable for="initial-state">Initial State</lable>
+    <input type="text" name="initial-state" id="initial-state" placeholder="0, 0, N">
+    <lable for="command">Movement Commands</lable>
+    <input type="text" name="command" id="command" placeholder="FRLF">
+    <br>
+    <button type="submit">Run</button>
+  </form>
+
+  <script src="scripts/marsRover.js"></script>
+</body>
+
+</html>
